@@ -1,0 +1,117 @@
+/* =========== Start Projects Style ============ */
+
+.work .container {
+  padding-bottom: 1.6rem;
+}
+.work .item {
+  grid-template-columns: 40% auto;
+  row-gap: 1rem;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: -2px 1px 15px -2px rgba(0, 0, 0, 0.16);
+  box-shadow: -2px 1px 15px -2px rgba(0, 0, 0, 0.16);
+  margin: 2.5rem 0px;
+  padding: 1.7rem;
+}
+.work .item .imgProject {
+  margin-right: 1rem;
+}
+.work .item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.work .item .desc {
+  border-right: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+  border-bottom-right-radius: 10px;
+}
+.work .item .desc h3 {
+  text-align: center;
+}
+.work .item .desc p {
+  width: 70%;
+  margin: 0px auto;
+  padding: 2rem 0px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--text-color);
+}
+.work .item .desc .bottomBar {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+@media screen and (max-width: 499px) {
+  .work .item .desc .bottomBar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .work .item .side {
+    outline-offset: unset !important;
+    outline: unset !important;
+    outline-color: unset !important;
+    outline-offset: unset !important;
+  }
+  .work .item .desc .technologeis {
+    display: block !important;
+    margin-bottom: 1rem;
+    grid-template-columns: unset !important;
+  }
+  .websites {
+    margin-left: 0px !important;
+  }
+  .work .technologeis h4 {
+    margin-bottom: 0.6rem;
+  }
+}
+.work .item .desc .bottomBar a {
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+}
+.work .item .desc .bottomBar i {
+  padding-left: 0.5rem;
+  font-size: 24px;
+}
+.work .item .desc .technologeis {
+  display: grid;
+  padding-bottom: 2rem;
+  grid-template-columns: auto auto;
+}
+@media screen and (max-width: 992px) {
+  .work .item {
+    grid-template-columns: auto;
+  }
+  .work .item .desc h3 {
+    padding-top: 2rem;
+  }
+}
+.work .item .desc .items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.work .item .desc .technologeis h4,
+.work .item .desc .technologeis h5 {
+  padding: 0.5rem 1rem;
+}
+.work .item .desc .technologeis h5 {
+  box-shadow: 0 0px 3px #aaaaaa;
+  text-transform: uppercase;
+}
+.work .item .side {
+  margin: 1rem 0px;
+  outline: 1px solid;
+  outline-color: rgb(6, 242, 6);
+  outline-offset: 0.9rem;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+.work .item .side:hover {
+  color: rgba(71, 126, 232, 0.7);
+  outline-color: rgba(71, 126, 232, 0);
+  outline-offset: 300px;
+}
+/* =========== End Projects Style ============ */
