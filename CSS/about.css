@@ -1,0 +1,111 @@
+/* =========== Start About Me Style ============ */
+.about {
+  padding-bottom: 0.5rem;
+}
+.about .container {
+  margin-bottom: 50px;
+}
+
+.about .container .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 95%;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+.about .container .halfRow {
+  padding-left: 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 30px;
+}
+.about .container .title {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #aaaaaa;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.about .container .item-data {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.about a {
+  color: #aaaaaa;
+  text-decoration: underline !important;
+}
+.about .item-text a {
+  color: var(--second-color);
+}
+.about .container .item-data i {
+  color: var(--second-color);
+}
+.about .container .leftItem {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 20px 15px;
+  position: relative;
+}
+.about .container .item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 20px;
+}
+.about .container .item .item-text {
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--text-color);
+  padding-bottom: 0.7rem;
+}
+.border-gray {
+  border: 1px solid rgb(144, 138, 138);
+  border-radius: 10px;
+}
+.about .container .item:last-child {
+  padding-bottom: 0px;
+}
+.about .container .item::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  top: 0px;
+  background-color: var(--second-color);
+}
+.about .container .item .circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--second-color);
+}
+@media (max-width: 768px) {
+  .about .container .row {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+  .about .container h3 {
+    text-align: center;
+  }
+
+  .about .container .halfRow {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0px;
+  }
+}
+.about .container i {
+  padding-right: 0.5rem;
+}
+
+/* =========== End About Me Style ============ */
