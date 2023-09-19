@@ -1,0 +1,121 @@
+/* =========== Start Custom Style ============ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s ease;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --main-width: 80%;
+  --text-color: #c0c0c0;
+  --second-color: #266dd3;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: var(--main-width);
+  margin: auto;
+}
+.blur {
+  filter: blur(10px);
+}
+.center-text {
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #aaaaaa !important;
+}
+@media screen and (max-width: 762px) {
+  .center-text {
+    display: none;
+  }
+}
+.p-75 {
+  padding-top: 5rem;
+}
+.font-500 {
+  font-weight: 500 !important;
+}
+.shadow {
+  box-shadow: 0 0px 3px #aaaaaa;
+}
+.bg-gray {
+  background: rgba(251, 245, 245, 0.46);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(16.2px);
+  -webkit-backdrop-filter: blur(16.2px);
+  border: 1px solid rgba(251, 245, 245, 0.32);
+  border-radius: 10px;
+}
+.bg-first-color {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(234, 249, 249, 0.67) 0.1%,
+    rgba(239, 249, 251, 0.63) 90.1%
+  );
+}
+.bg-second-color {
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+.cancel-event {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.h2 {
+  text-align: center;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 1.7rem auto;
+  color: var(--second-color);
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 400px) {
+  .h2 {
+    font-size: 1.8rem;
+  }
+  .span {
+    width: 3rem;
+  }
+}
+.span {
+  display: block;
+  height: 2px;
+  background-color: var(--second-color);
+  width: 4.5rem;
+  position: relative;
+}
+.icon {
+  padding-left: 0.3rem;
+  font-size: 18px;
+}
+.line {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  padding-bottom: 4rem;
+}
+@media screen and (min-width: 885px) {
+  .blur {
+    filter: unset;
+  }
+}
+/* =========== End Custom Style ============ */
