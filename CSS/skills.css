@@ -1,0 +1,79 @@
+/* =========== Start Skills Style ============ */
+
+.skills .skillsContainer {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 7rem;
+  padding-top: 1rem;
+}
+@media screen and (max-width: 762px) {
+  .skills .skillsContainer {
+    grid-template-columns: 1fr;
+  }
+  .skills .skillsTitle {
+    text-align: center;
+  }
+}
+.skills .skillsList {
+  row-gap: 1.4rem;
+  padding: 1rem 1rem 1.8rem 1rem;
+}
+.skills .skillsTitles {
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.625rem;
+}
+.skills .skillsTitles .group {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.skills .skillsTitles .group img {
+  height: 35px;
+  margin-right: 9px;
+  width: 35px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 410px) {
+  .skills .skillsTitles .group img {
+    height: 28px;
+    width: 28px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .skills .skillsList {
+    padding: 1rem 0px;
+  }
+}
+.skills .skillsBar,
+.skills .percentage {
+  height: 4px;
+  border-radius: 10px;
+}
+.skills .skillsBar {
+  background-color: var(--text-color);
+}
+.skills .percentage {
+  display: block;
+  background-color: var(--second-color);
+}
+.text-sm {
+  line-height: 1.43rem;
+}
+.skills .skillsTitle {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  color: #aaaaaa;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.skills .title {
+  text-align: center;
+  padding: 0.5rem;
+  width: 160px;
+  border-radius: 4px;
+  color: var(--second-color);
+  margin: 0 auto;
+  margin: 1.7rem auto;
+}
+/* =========== End Skills Style ============ */
