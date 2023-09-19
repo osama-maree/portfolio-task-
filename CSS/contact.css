@@ -1,0 +1,96 @@
+/* =========== Start Contact Me style ============ */
+.contact .container .grid {
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
+}
+@media screen and (max-width: 762px) {
+  .contact .container .grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .contact .right {
+    margin-top: 2.5rem;
+  }
+}
+.contact .form {
+  background: white;
+  box-shadow: -2px 1px 15px -2px rgba(0, 0, 0, 0.16);
+  margin-bottom: 2.5rem;
+  padding: 1.7rem;
+  border-radius: 17px;
+}
+.contact .right {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.contact textarea,
+.contact input {
+  width: 100%;
+  margin-top: 0.8rem;
+  padding: 8px;
+  font-size: 400;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(234, 249, 249, 0.67) 0.1%,
+    rgba(239, 249, 251, 0.63) 90.1%
+  );
+  outline: none;
+}
+.contact h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.contact button {
+  display: inline-block;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: var(--second-color);
+  color: white;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.contact .left {
+  display: flex;
+  justify-content: center;
+}
+.contact .iconsWebsites {
+  color: var(--second-color);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 2px solid var(--text-color);
+  width: auto;
+  right: 0px;
+}
+.contact .iconsWebsites .leftIcon {
+  padding-left: 10px;
+}
+.contact .iconsWebsites .rightIcon {
+  padding-right: 10px;
+  margin-bottom: 4px;
+}
+.contact .iconsWebsites .rightIcon a {
+  margin-left: 1rem;
+}
+.contact .iconsWebsites a {
+  padding-bottom: 0.6rem;
+}
+.contact .iconsWebsites i {
+  font-size: 26px;
+}
+.contact .left img {
+  border-radius: 10px;
+  object-fit: cover;
+  max-width: 100%;
+}
+.contact span {
+  color: var(--text-color);
+}
+/* =========== End Contact Me style ============ */
