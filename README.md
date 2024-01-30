@@ -1,1 +1,1 @@
-on versel [https://portfolio-task-zeta.vercel.app/]
+on versel [https://osama-maree-dev.vercel.app/]
